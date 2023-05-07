@@ -1,0 +1,8 @@
+[submodule "ui"]
+	path = ui
+	url = https://github.com/tynydeedev/crawler-fetch-vn-ui
+	branch = main
+[submodule "service"]
+	path = service
+	url = https://github.com/tynydeedev/crawler_fetch_vn
+	branch = main
