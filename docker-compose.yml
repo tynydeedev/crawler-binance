@@ -7,7 +7,7 @@ services:
 
   backend:
     build:
-      context: ./crawler_fetch_vn
+      context: ./service
       target: deploy
     environment:
       REDIS_HOST: redis
@@ -20,7 +20,7 @@ services:
   
   frontend:
     build:
-      context: ./crawler-fetch-vn-ui
+      context: ./ui
       target: deploy
     environment:
       VITE_API_URL: http://localhost:3000
