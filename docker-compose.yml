@@ -1,0 +1,30 @@
+version: "3.5"
+
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis
+
+  backend:
+    build:
+      context: ./crawler_fetch_vn
+      target: deploy
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      SYMBOLS: 50
+    depends_on:
+      - redis
+    ports:
+      - 3000:3000
+  
+  frontend:
+    build:
+      context: ./crawler-fetch-vn-ui
+      target: deploy
+    environment:
+      VITE_API_URL: http://localhost:3000
+    ports:
+      - 8080:8080
+    depends_on:
+      - backend
