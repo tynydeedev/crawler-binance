@@ -1,6 +1,6 @@
 # Binance Simple Crawler
 
-This project includes 2 sub-projects (backend and frontend) due to the deployment method that I choose.
+This project includes 2 sub-projects (service and ui) due to the deployment method that I choose.
 
 The backend is hosted on an EC2 instance, listening on port 80 and port 443 (with self-signed certificate).
 
