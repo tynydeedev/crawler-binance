@@ -1,6 +1,0 @@
-[submodule "crawler-fetch-vn-ui"]
-	path = crawler-fetch-vn-ui
-	url = https://github.com/tynydeedev/crawler-fetch-vn-ui
-[submodule "crawler_fetch_vn"]
-	path = crawler_fetch_vn
-	url = https://github.com/tynydeedev/crawler_fetch_vn
